@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* div{
+            border: 1px solid;
+        } */
+        section{
+            border: 1px solid;
+            min-height: 800px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 5px;
+            background-color: red;
+        }
+        section >div:first-child{
+            grid-column: span 6;
+            background-color: white;
+            
+        }
+        section >div:nth-child(2){
+            grid-column: span 3;
+            grid-row: span 3;
+            background-color: red;
+            color: white;
+            text-size-adjust: 0px;
+        }
+        section >div:nth-child(3){
+            grid-column: span 3;
+            grid-row: span 3;
+            background-color: red;
+            
+        }
+        section >div:nth-child(4){
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: rgb(165, 45, 45);
+        }
+        section >div:nth-child(5){
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: rgb(165, 45, 45);
+        }
+        section >div:last-child{
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: rgb(165, 45, 45);  
+        }
+        h3{
+            padding-left: 30px;
+            font-size: larger;
+        }
+        h4{
+            padding-left: 30px;
+            color: white;
+        
+        }
+        p{
+            padding-left: 30px;
+            color: wheat;
+        }
+       img{
+        margin-left: 350px;
+       }
+       h2{
+        padding-left: 30px;
+       }
+        .ok{ 
+            border-radius: 40px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <H2>Libertarians ></H2>
+            </div>
+        <div><h3>Down with the state</h3>
+            <p>Abandon the left vs right paradigm and adopt new ideals, where consistency and login regin supreme</p>
+        </div>
+        <div>
+            <img src="./JanMediaclass/grid_image_-removebg-preview.png" alt="200px">
+        </div>
+        <div>
+            <h4>But what about the roads</h4>
+            <p>You just dont understand economincs like supply and demand. Dont worry kiddo, where there's demand there will be a supply. we'll all have our road</p>
+
+        </div>
+        <div>
+            <h4>Is taxation theft</h4>
+            <p>if i came to your house  with some heavily armed buddles, demanded that you and your niegbours give a percentage of yur income, in return for  crappy monopolized services that you didnt ask for, would you consider that a theft</p>
+        </div>
+        <div>
+            <h4>So what you're saying is...?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi? Odit laborum delectus, amet a qui mollitia praesentium fuga aperiam dicta consectetur? Quos magnam exercitationem, veniam architecto saepe a perspiciatis.</p>
+        </div>
+    </section>
+    <footer class="ok">
+
+    </footer>
+</body>
+</html>

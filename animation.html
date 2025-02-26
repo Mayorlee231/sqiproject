@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .middle{
+            border: 1px solid;
+            height: 40px;
+
+        }
+        .roadline1{
+            border: 1px solid;
+            height: 20px;
+            width: 200px;
+            background-color: white;
+            /* position: relative; */
+            left: 40%;
+            top: -50%;
+        }
+        .roadline2{
+            border: 1px solid;
+            height: 20px;
+            width: 200px;
+            background-color: white;
+            /* position: relative; */
+            left: 40%;
+            top: -30%;
+        }
+        .roadline3{
+            border: 1px solid;
+            height: 20px;
+            width: 200px;
+            background-color: white;
+            /* position: relative; */
+            left: 40%;
+            top: -10%;
+        }
+
+
+        .road{
+            border: 1px solid;
+            height: 200px;
+            background-color: black;
+            margin-top: -40px;
+            border-bottom: 6px dashed white;
+            
+        }
+        .vehicle{
+            animation-name: div2 ;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        .vehicle1{
+            animation-name: div2 ;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes div2 {
+            0%{
+                transform: translateX(-1300px);
+             }
+             100%{
+                transform: translateX(900px);
+             }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="div1"><img src="./JanMediaclass/animation house image .png" alt="" width="100%"></div>
+    <div class="road">
+        <div class="vehicle">
+            <img src="./JanMediaclass/animation vehicle image .png" alt=""></div>
+            <div style=" width: 30%; margin-left: 650px;">
+                <div class="roadline1" style="margin-top: -70px;"></div>
+                <div class="roadline2" style="margin-top: 30px;"></div>
+                <div class="roadline3" style="margin-top: 30px;"></div>
+            </div>
+            
+    </div>
+    <div class="middle"></div>
+    <div class="road">
+        <div class="vehicle1">
+            <img src="./JanMediaclass/second car image.png" alt=""></div>
+            <div style=" width: 30%; margin-left: 650px;">
+                <div class="roadline1" style="margin-top: -70px;"></div>
+                <div class="roadline2" style="margin-top: 30px;"></div>
+                <div class="roadline3" style="margin-top: 30px;"></div>
+            </div>
+    </div>
+    
+    
+</body>
+</html>

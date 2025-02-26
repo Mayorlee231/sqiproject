@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rwd</title>
+    <script src="https://kit.fontawesome.com/c7ab05360b.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            border: 1px solid;
+            width: 100%;
+            height: 100px;
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: fixed;
+         }
+         ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            }
+         .log{
+            font-size: x-large;
+         }
+         .icon{
+            display: none;
+         }
+         section{
+            height: 100dvh;
+            background-image: url(./JanMediaclass/fog-on-dark-waters-edge.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .text{
+            color: green;
+            width: 50%;
+            text-align: center;
+         }
+
+         button{
+            padding: 20px 80px;
+            margin-top: 10px;
+            border: 0;
+            background-color: green;
+            color: white;
+            border-radius: 50px;
+            
+         }
+         @media screen and (max-width:850px) {
+            ul{
+                display: none;
+            }
+            .icon{
+                display: block;
+            }
+            .text{
+            color: green;
+            width: 70%;
+            text-align: center;
+         }
+         }
+         @media screen and (max-width:320px) {
+            .text{
+                font-size: 10px;
+            }
+            
+         }
+           
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="log">BMW</div>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+        </ul>
+       <div class="icon"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+<section>
+    <div class="text">
+        <h1>Study at SQI to become a global talent</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, qui. Soluta saepe eos iusto inventore ipsum libero, possimus illum consequuntur sint ducimus ratione aspernatur neque vero beatae fugit error tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <button>start now</button>
+    </div>
+</section>
+</body>
+</html>
