@@ -1,242 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/c7ab05360b.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        nav {
-            border: 1px solid;
-            height: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: white;
-        }
-
-        .img1 {
-            height: 80px;
-
-        }
-
-        ul {
-            display: flex;
-            list-style-type: none;
-            gap: 20px;
-            text-decoration: none;
-            color: RGB(8, 31, 137);
-            
-        }
-
-        ul>li>a {
-            text-decoration: none;
-        }
-
-        .icon {
-            border: 1px solid;
-            width: 20px;
-            display: none;
-        }
-
-        .middle {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 50px 40px;
-        }
-
-        button {
-            padding: 20px 80px;
-            margin-top: 10px;
-            border: 0;
-            background-color: RGB(0, 32, 138);
-            color: white;
-            border-radius: 10px;
-            margin-top: 50px;
-        }
-
-        .head1 {
-            font-size: 75px;
-            color: RGB(0, 14, 66);
-            font-family: "Poppins" Helvetica, Arial, Lucida, sans-serif;
-            font-style: normal;
-            text-align: left;
-        }
-
-        .img2 {
-            height: 20dvh;
-            width: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 80px;
-
-        }
-
-        .cards {
-            /* width: 100%;
-            font-size: 15px;
-            display: flex;
-            text-align: start;
-            margin: 20px 0;
-            padding-left: 70px;
-            flex-wrap: wrap; */
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px;
-            flex-wrap: wrap;
-        }
-
-        .cards img {
-            width: 100%;
-            /* justify-content: center; */
-            height: auto;
-        }
-
-        .cards h3 {
-            font-size: 20px;
-            color: RGB(0, 14, 84);
-            margin: 20px 0;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-
-        .cards p {
-            font-size: 20px;
-            color: rgba(102, 102, 102);
-            
-        }
-        .cards a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 20px;
-            margin-inline-start: -85px;
-            
-            
-        }
-        
-        .card {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            border-radius: 10px;
-            
-        }
-        .container2{
-            display: flex;
-            justify-content: space-around;
-            justify-content: space-evenly;
-            color: RGB(102, 102, 102);
-        }
-        /* .box2{
-            width: 10%;
-            height: 170px;
-            position: fixed;
-            top: 30%;
-            margin-left: -100px;
-            border: 1px solid;
-        } */
-        .box3 {
-            position: fixed;
-            top: 30%;
-            height: 150px;
-            width: 4%;
-            font-size: 30px;
-            text-align: center;
-            padding: 20px;
-            background-color: #314A83;
-            color: white;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .box3:hover {
-            transform: scale(1.1);
-        }
-
-
-
-        @media screen and (max-width:850px) 
-
-            nav {
-                height: 100px;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: white;
-                padding: 20px;
-            }
-
-            ul {
-                display: none;
-            }
-
-            .icon {
-                display: block;
-            }
-
-            .text {
-                color: green;
-                width: 70%;
-                text-align: start;
-            }
-            .eng1{
-                border: 1px solid;
-                width: 50%;
-                height: 100%;
-                
-            
-            }
-        
-
-        @media screen and (max-width:320px) {
-            .text {
-                font-size: 10px;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="SQIproject.css">
+<script src="https://kit.fontawesome.com/c7ab05360b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
-
         <nav>
-            <div class="top">
+            <div>
                 <img src="./JanMediaclass/co.jpeg" alt="" class="img1">
             </div>
-            <ul>
-                <li> <a href="" ><b>About</b></li>
-                    <li> <a href=""><b>Programmes</b></a></li>
-                    <li> <a href=""><b>Admissions</b></a></li>
-                    <li><a href=""><b>E-Portal</b></a></li>
-                    <li><a href=""><b>SQI Scholarship</b></a></li>
-                    <li><a href=""><b>News</b></a></li>
-    
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">About ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Campus Info</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Programmes ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">National Innovation</a></li>
+                        <li><a href="#">Diploma</a></li>
+                        <li><a href="#">Professional Diploma program</a></li>
+                        <li><a href="#">Executive Professional</a></li>
+                        <li><a href="#">Certificate</a></li>
+                        <li><a href="#">Programs</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Admissions▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Apply for a Programme<a><li>
+                        <li><a href="#">Mode of Study</a></li>
+                        <li><a href="#">Tuition</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        
+                    </ul>
+                </li>
+            <li class="dropdown">
+                <a href="#">E-Portal ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">student</a></li>
+                    <li><a href="#">staff</a></li>
+                </ul>
+                <li><a href="#">SQI Scholarship</a></li>
+                <li><a href="#">News</a></li>
             </ul>
-                
-            <div class="icon"><i class="fa-solid fa-bars"></i></div>
+            </ul>
+            <label for="bar" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+        </label>
         </nav>
     </header>
-
     <section class="middle">
         <div>
             <h1 class="head1">Study to <br> become a <br>global talent</h1>
             <p>Learn new tech skills using a world-class curriculum from top industry <br> experts in an accredited
                 institution.</p>
-            <button>Start Now</button>
+            <button class="middlebutton">Start Now</button>
         </div>
         <div>
             <img src="./JanMediaclass/bg-header-sqi-1.png" alt="">
@@ -249,7 +76,7 @@
             <h3>National Innovative Diploma (NID)</h3>
             <p>The National Innovation Diploma (NID) <br>offered at SQI College of ICT is a 2 year <br> approved
                 academic program of the National Board <br> for Technical Education (NBTE).</p>
-                <span style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a></span>
+                <a href="" style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a>
         </div>
         <div class="card">
             <img src="./JanMediaclass/prof.jpeg" alt="">
@@ -257,7 +84,7 @@
             <p>The Professional Certificate Program is 1 year <br> practical training with wide range of edge-
                 <br>cutting IT certification courses offered in SQI <br>College of ICT to people who want to <br>advance
                 their career.</p>
-                <span style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a></span>
+                <a href="" style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a>
         </div>
         <div class="card">
             <img src="./JanMediaclass/certificate.jpeg" alt="">
@@ -265,81 +92,334 @@
             <p>The Certificate Program is a short-term <br>training, 2 weeks to 6 months with a wide <br>range of
                 edge-cutting IT certification courses <br> offered in SQI College of ICT to people who <br>want to
                 advance their careers.</p>
-                <span style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a></span>
-            
-        </div>
+                <a href="" style="display: flex; align-items: center; padding: 10px 70px;"><a href=""><u>Learn More </u></a>
+            </div>
     </section>
     <section class="container2">
         <div>
-            <h2>NATIONAL DIPLOMA COURSES</h2>
-            <p><u><b>Duration:</b> 2 Years</u></p>
-            <p><u><b>Certificate:</b> Both National Diploma and <br>Professional Diploma.</u></p>
-            <p><u><b>Skills:</b> Academic Institution recognized <br>skills and In-demand professional skills.</u></p>
-            <p><u><b>Entry Requirements: </b>120 min in JAMB <br> 5 Credits in O-Level, Your passion</u></p>
-            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p>
-            <p><u><b>Direct Entry: </b> Yes (Any University)</u></p>
-            <p><u><b>Direct Entry: </b>No</u></p>
-            <p><b>Access to Alumni Network and <br> Opportunities:</b> Yes.</p>
+            <h2>NATIONAL DIPLOMA COURSES</h2><br>
+            <p><u><b>Duration:</b> 2 Years</u></p><br>
+            <p><u><b>Certificate:</b> Both National Diploma and <br>Professional Diploma.</u></p><br>
+            <p><u><b>Skills:</b> Academic Institution recognized <br>skills and In-demand professional skills.</u></p> <br>
+            <p><u><b>Entry Requirements: </b>120 min in JAMB <br> 5 Credits in O-Level, Your passion</u></p> <br>
+            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p> <br>
+            <p><u><b>Direct Entry: </b> Yes (Any University)</u></p> <br>
+            <p><u><b>Direct Entry: </b>No</u></p> <br>
+            <p><b>Access to Alumni Network and <br> Opportunities:</b> Yes.</p> <br>
         </div>
         <div>
-            <h2>PROFESSIONAL DIPLOMA COURSES</h2>
-            <p><u><b>Duration:</b> 1 Year Courses</u></p>
-            <p><u><b>Certificate:</b> Professional Diploma</u></p>
-            <p><u><b>Skills:</b>  In-demand professional skills</u></p>
-            <p><u><b>Entry Requirements:</b> Your passion</u></p>
-            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p>
-            <p><u><b>Direct Entry: </b>Partially Yes (LAUTECH ODL)</u></p>
-            <p><u><b>Direct Entry: </b>No</u></p>
-            <p><b>Access to Alumni Network and <br>Opportunities:</b> Yes.</p>
+            <h2>PROFESSIONAL DIPLOMA COURSES</h2><br>
+            <p><u><b>Duration:</b> 1 Year Courses</u></p><br>
+            <p><u><b>Certificate:</b> Professional Diploma</u></p><br>
+            <p><u><b>Skills:</b>  In-demand professional skills</u></p><br>
+            <p><u><b>Entry Requirements:</b> Your passion</u></p><br>
+            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p><br>
+            <p><u><b>Direct Entry: </b>Partially Yes (LAUTECH ODL)</u></p><br>
+            <p><u><b>Direct Entry: </b>No</u></p><br>
+            <p><b>Access to Alumni Network and <br>Opportunities:</b> Yes.</p><br>
         </div>
         <div>
-            <h2>CERTIFICATE PROGRAM</h2>
-            <p><u><b>Duration:</b> 2 weeks to 6 months</u></p>
-            <p><u><b>Certificate:</b> Certificate Program</u></p>
-            <p><u><b>Skills:</b>  In-demand professional skills</u></p>
-            <p><u><b>Entry Requirements:</b> Your passion</u></p>
-            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p>
-            <p><u><b>Direct Entry: </b>No</u></p>
-            <p><b>Access to Alumni Network <br>and Opportunities:</b> Yes.</p>
+            <h2>CERTIFICATE PROGRAM</h2><br>
+            <p><u><b>Duration:</b> 2 weeks to 6 months</u></p><br>
+            <p><u><b>Certificate:</b> Certificate Program</u></p><br>
+            <p><u><b>Skills:</b>  In-demand professional skills</u></p><br>
+            <p><u><b>Entry Requirements:</b> Your passion</u></p><br>
+            <p><u><b>Required Hardware: </b> (usually Laptop)</u></p><br>
+            <p><u><b>Direct Entry: </b>No</u></p><br>
+            <p><b>Access to Alumni Network <br>and Opportunities:</b> Yes.</p><br>
         </div>
     </section>
-    <section class="box2">
-        <div class="box3">
-        <div><i class="fa-brands fa-facebook-f"></i></div>
-        <div><i class="fa-brands fa-square-twitter"></i></div>
-       <div><i class="fa-brands fa-linkedin"></i></div>
+    <div class="box3">
+        <i class="fa-brands fa-facebook-f" style="background-color: #34457A;"></i>
+        <i class="fa-brands fa-twitter" style="background-color: #0092CC;"></i>
+        <i class="fa-brands fa-linkedin-in" style="background-color: #0E6290;"></i>
     </div>
+</section>
+<section class="courses">
+<span style="justify-content: space-around;"><h1>Our Top Courses</h1>
+ <p>Take a look at some of our popular courses</p>
+ <a href="" class="view">view courses</a>
+</span>
+ <div class="course">
+ <div class="course-card" style="background-color: #88C4DD; ">
+    <img src="./JanMediaclass/software-engineering-630x330-1.webp" alt="">
+    <h1>Software Engineering</h1>
+    <p>Software Engineering is one of the most in-demand jobs across the globe today.Software Engineers are also known as programmers, developers or coders. They are the ones behind all the apps and software you use today either on your phone or computer within your browser. Software such as banking apps, booking apps, mailing apps (e.g Gmail), Chat apps (e.g WhatsApp) and other Social apps (e.g Twitter, Facebook) and many more are created by software engineers.</p>
+    <a href="#" class="learn-more">Learn More ></a>
+ </div>
+ <div class="course-card" style="background-color: #EEEFBD;">
+    <img src="./JanMediaclass/DATA-SQI.jpeg" alt="">
+     <h1> Data Science & Analysis</h1>
+    <p>Software Engineering is one of the most in-demand jobs across the globe today.Software Engineers are also known as programmers, developers or coders. They are the ones behind all the apps and software you use today either on your phone or computer within your browser. Software such as banking apps, booking apps, mailing apps (e.g Gmail), Chat apps (e.g WhatsApp) and other Social apps (e.g Twitter, Facebook) and many more are created by software engineers.</p>
+    <a href="#" class="learn-more">Learn More ></a>
+</div>
+ <div class="course-card" style="background-color: #E0D5C0;">
+    <img src="./JanMediaclass/product.jpeg" alt="">
+    <h1>UI/UX - Product Design</h1>
+    <p>More than ever before individuals and businesses are relying on digital products and services. From online meeting tools to finance, from e-commerce platforms to healthcare and food apps. Making an intuitive digital product design is even more import at this time as it determines the overall experience of the users.Here, you'll build your product design skillset from the bottom up with lessons, mentorship sessions, and career advice from our design professionals.</p>
+    <a href="#" class="learn-more">Learn More ></a>
+ </div>
+    
+    <div class="course-card" style="background-color: #DFD5E8;">
+        <img src="./JanMediaclass/digital-literacy.jpeg" alt="">
+        <h1>Digital Literacy</h1>
+        <p>This course is designed to prepare you for success in a modern world full of computers—not only the traditional computers such as desktop and notebook PCs but also computers that you interact with in other places too, like your bank's ATM or your employer's computerized cash register. In this course, you will learn about the technologies that drive our computerized society, including the Internet and local area networks (LANs).Taking this course will help you become a digitally literate person—that is, someone who understands how computer technology fits into our modern society and knows how to navigate a variety of computing environments.</p>
+        <a href="#" class="learn-more">Learn More ></a>
+    </div>
+</div>
     </section>
-        <div>
-            <h1>Our Top Courses</h1>
-            <p>Take a look at some of our popular courses</p>
-           <a href="">view courses</a>
+    <section class="alumni">
+        <h2>Our alumni work at world-class <br>companies around the world including</h2>
+        <div class="logos">
+            <img src="./New folder/google.png" alt="Google">
+            <img src="./New folder/Interswitch.png" alt="Interswitch">
+            <img src="./New folder/Andela-log-landscape-blue-400px.png" alt="Andela">
+            <img src="./New folder/Microsoft_logo.png" alt="Microsoft">
+            <img src="./New folder/Paystack.png" alt="Paystack">
+            <img src="./New folder/brewery.png" alt="International Breweries">
+            <img src="./New folder/Wema-Bank-Logo.png" alt="Wema Bank">
+            <img src="./New folder/clan-logo.png" alt="Credit Clan">
+            <img src="./New folder/edozzier.png" alt="EDOZZIER">
+            <img src="./New folder/moneymie.png" alt="MoneyMie">
+            <img src="./New folder/Nigerian_Army.png" alt="Nigerian Army">
+            <img src="./New folder/aella-credit.png" alt="Aella Credit">
         </div>
-        <div>
-            <img src="./JanMediaclass/software-engineering-630x330-1.webp" alt="">
-            <h1>Software Engineering</h1>
-            <p>Software Engineering is one of the most in-demand jobs across the globe today.Software Engineers are also known as programmers, developers or coders. They are the ones behind all the apps and software you use today either on your phone or computer within your browser. Software such as banking apps, booking apps, mailing apps (e.g Gmail), Chat apps (e.g WhatsApp) and other Social apps (e.g Twitter, Facebook) and many more are created by software engineers.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <img src="./JanMediaclass/software-engineering-630x330-1.webp" alt="">
-            <h1>Software Engineering</h1>
-            <p>The eruption of data is transforming indiviuals and businesses. Companies either big or small are now expecting their business decisions to be based on data-led insight. Data specialists have a tremendous impact on business strategies and marketing tactics because everyone now depends on data to formulate improved strategies for the future of their companies.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <img src="./JanMediaclass/software-engineering-630x330-1.webp" alt="">
-            <h1> Data Science & Analysis</h1>
-            <p>Software Engineering is one of the most in-demand jobs across the globe today.Software Engineers are also known as programmers, developers or coders. They are the ones behind all the apps and software you use today either on your phone or computer within your browser. Software such as banking apps, booking apps, mailing apps (e.g Gmail), Chat apps (e.g WhatsApp) and other Social apps (e.g Twitter, Facebook) and many more are created by software engineers.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <img src="./JanMediaclass/software-engineering-630x330-1.webp" alt="">
-            <h1>Software Engineering</h1>
-            <p>Software Engineering is one of the most in-demand jobs across the globe today.Software Engineers are also known as programmers, developers or coders. They are the ones behind all the apps and software you use today either on your phone or computer within your browser. Software such as banking apps, booking apps, mailing apps (e.g Gmail), Chat apps (e.g WhatsApp) and other Social apps (e.g Twitter, Facebook) and many more are created by software engineers.</p>
-            <a href="#">Learn more</a>
-        </div>
+    </section>
+    <section class="tour" >
+        <div class="container5">
+            <div class="video-section">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HgC6bjMbqpw?si=Wc7TXexbQa_t8NRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="text-section">
+                <h1>Take a Tour</h1>
+                <p>Our campus is a living centre for innovation and creativity for sustainability. 
+                We love showing students our campus and allowing them to see, hear and feel the excitement 
+                that comes with being part of the Central community, which is an atmosphere that is open-minded, 
+                always exciting, and filled with academic excellence.</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+        </div> <br> <br>
     
-    
+        <div class="whatsapp-chat">
+            <img src="./JanMediaclass/whatsapp image.webp" alt="" style="height: 40px; width: 40px;">
+            <a href="" class="hh">Need Help? <strong>Chat with us</strong></a>
+        </div>
+    </section> <br><br>
 
+
+    <section class="testimonial">
+       <div class="testi">
+         <h1>Testimonials</h1> <br>
+        <p>Read what our current students and alumni have to say about their SQI experience.</p>
+    </div>
+
+        <div class="testimonials">
+            <img src="./JanMediaclass/1741214992411.jpeg" alt="" style="height: 10px "width: 5px;>
+            <h3>SQI College of ICT IBADAN</h3>
+            <p>4.9</p>
+            <p>★★★★★</p>
+            <p>Based on 84 reviews</p>
+            <p>powered by <span class="google">Google</span></p>
+            <button style="border-radius: 5px;">Review us on <span>G</span></button>
+        </div>
+        
+    
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="review-header">
+                    <img src="./JanMediaclass/1741214992374.png" alt="Profile" class="profile-pic">
+                    <h3>Omodola Omolabake</h3>
+                </div>
+                <p>3 years ago</p>
+                <p class="rating">★★★★★</p>
+                <p style="font-size: small;">Coming to SQI has made me believe that life has more to offer. Talking about being experienced in ICT rapidly, SQI deserves uncountable recommendations. Thank you SQI!</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="review-header">
+                    <img src="./JanMediaclass/1741214992389.png" alt="Profile" class="profile-pic">
+                    <h3>Chertoh Orda</h3>
+                </div>
+                <p>4 years ago</p>
+                <p class="rating">★★★★★</p>
+                <p style="font-size: small;">It is a great place to learn. It is a conducive environment filled with loving and patient teachers, a wonderful and admirable manager, and supportive and cheerful students.</p>
+            </div>
+        </div>
+    </section>
+    <section class="why-study">
+        <div class="why-study-container">
+            <div class="why-text">
+                <h2>Why study at SQI?</h2>
+                <div class="why-item">
+                    <div>
+                        <i class="fa-solid fa-atom"></i><br> <br>
+                        <h3>Project Based Learning</h3>
+                        <p>Our courses are practical, hands-on learning. Practice and apply knowledge with real-world projects that contribute largely to your portfolio.</p>
+                    </div>
+    
+                    <div class="why-item">
+                        <div>
+                            <i class="fa-solid fa-book-open-reader"></i><br> <br>
+                            <h3>Expert Instructors</h3>
+                            <p>Get to interact with different mentors and draw from their loads of experience.</p>
+                        </div> <br>
+                    </div>
+                </div> 
+                
+                <div class="why-item">
+                    <div>
+                        <i class="fa-solid fa-water"></i><br> <br>
+                        <h3>Physical & Virtual Class</h3>
+                        <p>You can now choose physical class experience or online classroom and learn from anywhere in the world.</p>
+                    </div>
+                    <div class="why-item">
+                        <div>
+                            <i class="fa-solid fa-book-open-reader"></i> <br> <br>
+                            <h3>Free access to our hub and community</h3>
+                            <p>You will have access to our fully functional hub for co-working and working on projects, assignments, and even begin a start-up.</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="why-item">
+                    <div>
+                        <i class="fa-solid fa-award"></i> <br> <br>
+                        <h3>Certification</h3>
+                        <p>Be certified by an accredited and globally recognized institution. SQI got its accreditation in Sept 2021 from the NBTE, Nigeria.</p>
+                    </div>
+    
+                    <div class="why-item">
+                        <div>
+                            <i class="fa-solid fa-briefcase"></i> <br> <br>
+                            <h3>Job Opportunity</h3>
+                            <p>78.5% of our students found secure employment within three months of graduation. Students leave from learning to getting job roles.</p>
+                        </div> 
+                    </div>
+                </div>
+               
+                <div class="why-item">
+                    <div>
+                        <i class="fa-solid fa-comments"></i> <br> <br>
+                        <h3>Alumni Support</h3>
+                        <p>Our students have access to alumni who currently work at top tech organizations in the world such as Google, Microsoft, Interswitch, etc.</p>
+                    </div>
+    
+                    <div class="why-item">
+                        <div>
+                            <i class="fas fa-book"></i><br> <br>
+                            <h3>Access to study materials</h3>
+                            <p>Students have access to prerecorded videos and resources that they can make use of to further solidify their knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="why-image">
+                <img src="./JanMediaclass/last image .jpg" alt="Why study at SQI?">
+            </div>
+        </div>
+    </section>
+        
+    <section class="faq1">
+            <section class="faq">
+               <div class="faaq">
+                <h6 class="FAQ">FAQ</h6> 
+                <h2>Frequently Asked</h2>
+                <h2 class="quest"> Questions</h2> <br> <br>
+                <a href=""  class="contact">Contact Us</a>
+               </div> <br> <br>
+        
+        
+                <div class="question">
+                    <h3>How do I get into the college</h3> <br>
+                    <p>We currently have 3 modes of study at SQI College of ICT, <br> the National Innovative Diploma, Professional Diploma <br>Certificate, and Ordinary Professional Certificate Program. <br>You can join us by applying through any of these modes of <br>study.</p><br>
+                </div>
+            
+                <div class="question"><br> <br>
+                    <h3>How much is the tuition?</h3><br>
+                </div>
+            
+                <div class="question"><br> <br>
+                    <h3>Are your classes physical or virtual?</h3> <br>
+                </div>
+            
+                <div class="question"><br> <br>
+                    <h3>Will I get a job after my training?</h3><br>
+                </div>
+        
+            </section>
+        </section>
+        <section class="hero">
+            <div class="content">
+                <p>IT'S TIME FOR YOU TO TAKE YOUR TECH CAREER TO THE NEXT LEVEL</p>
+                <h1>Ready to Get Started?</h1><br>
+                <p>We provide and lead others in quality education, service, industry, <br>and character as well as discipline.</p><br><br>
+                <a href="#" class="btn">Join Us Today</a>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="lastest1">
+            <h2>Latest News</h2>
+        </div>
+            <div class="news-container">
+                <div class="news-card">
+                    <img src="./JanMediaclass/WhatsApp-Image-2025-02-18-at-15.35.16_a7626ca6-400x250.jpeg" alt="JAMB Subject Combination">
+                    <h3>JAMB subject combination for 2025 admission into SQI College of ICT</h3>
+                    <p><strong>Feb 18, 2025</strong></p>
+                    <p>A common reason JAMB UTME candidates are denied admission is the wrong subject choice. Learn more about the correct combinations...</p>
+                </div>
+                <div class="news-card">
+                    <img src="./JanMediaclass/accreditation@0.5x-400x250.jpeg" alt="NBTE Accreditation">
+                    <h3>Monotechnic Accreditation: NBTE Visits SQI College of ICT, Ogbomoso</h3>
+                    <p><strong>Dec 14, 2024</strong></p>
+                    <p>SQI College of ICT hosted an accreditation team from NBTE to assess new programs proposed by the institution...</p>
+                </div>
+                <div class="news-card">
+                    <img src="./JanMediaclass/1741214992411.jpeg" alt="JAMB Cut-off Mark">
+                    <h3>SQI College of ICT Announces JAMB Cut-off Mark and Post-UTME Exam Date</h3>
+                    <p><strong>Aug 14, 2024</strong></p>
+                    <p>SQI College of ICT has announced its JAMB/UTME cut-off mark and schedule for the upcoming Post-UTME examination...</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-column">
+                <h3>Hello, we're SQI College of ICT</h3>
+                <p>We provide and lead others in quality ICT education.</p>
+                <p>Send us a mail: <a href="mailto:enquiry@edu.sqi.ng">enquiry@edu.sqi.ng</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Application Portal</a>
+                <a href="#">Student Portal</a>
+                <a href="#">Professional Courses</a>
+                <a href="#">NID Courses</a>
+                <a href="#">Campus Info</a>
+                <a href="#">Accomodation</a>
+                <a href="#">SQI Scholarship</a>
+                <a href="#">Donate</a>
+            </div>
+            <div class="footer-column">
+                <h3>Ogbomoso</h3>
+                <p>Old Ilorin Road, Opposite Yoaco Filling Station, Yaco, Ogbomoso.</p>
+                <p><strong>0906 281 9991, 0906 281 9993</strong></p>
+                <a href="#">Locate on the map</a>
+            </div>
+            <div class="footer-column">
+                <h3>Ibadan</h3>
+                <p>First Floor, H25 Heritage Mall, Opposite Central Bank of Nigeria, Dugbe, Ibadan.</p>
+                <p><strong>0906 281 9994</strong></p>
+                <a href="#">Locate on the map</a>
+            </div>
+            
+        </div>
+        </footer>
+        <section>
+            <div class="copy">
+            <p>Copyright © 2025 | SQI ICT Consultants. All Rights Reserved.</p>
+        </section>
+        
+
+
+</section>
+</body>
 </html>
